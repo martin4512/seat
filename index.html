@@ -1,169 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bitcoin Support Helpline</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seat Help — Customer Support</title>
+  <meta name="description" content="24/7 independent Seat support hotline. Get help with mobile Seat access, payments, and account issues. Call us now." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-      color: #f9c74f;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      margin-bottom: 30px;
-      color: #eeeeee;
-    }
-
-    .cta-box {
-      background: #1d3557;
-      padding: 30px;
-      border-radius: 15px;
-      margin: 30px 0;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-
-    .cta-number {
-      font-size: 28px;
-      margin-bottom: 15px;
-      color: #f94144;
-    }
-
-    .cta-button {
-      background-color: #f9c74f;
-      color: #000;
-      padding: 15px 30px;
-      font-size: 20px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s ease;
-      display: inline-block;
-    }
-
-    .cta-button:hover {
-      background-color: #f9844a;
-    }
-
-    .section {
-      margin-top: 40px;
-      text-align: left;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-    }
-
-    .section h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      color: #90e0ef;
-    }
-
-    .section ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .section ul li {
-      margin-bottom: 12px;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    .section ul li::before {
-      content: '✔';
-      position: absolute;
-      left: 0;
-      color: #f9c74f;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 28px;
-      }
-      .cta-number {
-        font-size: 22px;
-      }
-      .cta-button {
-        font-size: 18px;
-        padding: 12px 25px;
-      }
-    }
+    body{margin:0;font-family:Inter,system-ui,sans-serif;background:#f9fafb;color:#111827}
+    header{background:#1f2937;padding:20px;display:flex;align-items:center;justify-content:center}
+    header img{height:40px;margin-right:10px}
+    header h1{margin:0;color:white;font-size:22px}
+    .container{max-width:960px;margin:0 auto;padding:40px 20px}
+    .hero{text-align:center;padding:40px 20px}
+    .hero h2{font-size:32px;margin-bottom:12px}
+    .hero p{color:#374151;font-size:18px;margin-bottom:24px}
+    .call-box{background:white;border:1px solid #e5e7eb;box-shadow:0 4px 12px rgba(0,0,0,0.08);border-radius:12px;padding:30px;text-align:center}
+    .phone{font-size:28px;font-weight:700;margin-bottom:16px}
+    .cta{display:inline-block;background:#2563eb;color:white;padding:14px 28px;border-radius:8px;font-size:18px;font-weight:600;text-decoration:none}
+    .cta:hover{background:#1d4ed8}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:40px}
+    .feature{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.05);border:1px solid #e5e7eb;text-align:center}
+    .feature h3{margin-top:10px;margin-bottom:8px;font-size:18px;color:#111827}
+    .feature p{margin:0;color:#4b5563;font-size:14px}
+    footer{margin-top:40px;padding:20px;text-align:center;font-size:13px;color:#6b7280}
+    footer strong{color:#111827}
+    .sticky{position:fixed;bottom:0;left:0;right:0;background:#2563eb;color:white;padding:14px;display:flex;justify-content:space-between;align-items:center}
+    .sticky a{background:white;color:#2563eb;font-weight:700;padding:10px 16px;border-radius:6px;text-decoration:none}
+    .icon{font-size:28px;color:#2563eb}
   </style>
 </head>
 <body>
+  <header>
+    <!-- Simple custom logo (replace with your own if you want a branded look) -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Seat_icon.svg/120px-Seat_icon.svg.png" alt="Seat Help Logo" />
+    <h1>Seat Help — Customer Support</h1>
+  </header>
 
   <div class="container">
-    <h1>🚨 Bitcoin Support Helpline</h1>
-    <p class="subtitle">Secure your crypto. Get help with BTC issues – fast, private, 24/7.</p>
-
-    <div class="cta-box">
-      <div class="cta-number">📞 +1 866-240-0136</div>
-      <a href="tel:+18662400136" class="cta-button">📞 Call Now</a>
+    <div class="hero">
+      <h2>24/7 Seat Assistance Hotline</h2>
+      <p>Having issues with your Seats, payments, or account? Call our support line for fast and friendly help anytime.</p>
     </div>
 
-    <div class="section">
-      <h2>🔧 Support For:</h2>
-      <ul>
-        <li>Pending or stuck BTC transactions</li>
-        <li>Wallet recovery or login problems</li>
-        <li>Wrong address transfers</li>
-        <li>Ledger, Trezor, or MetaMask issues</li>
-        <li>Fraud alerts or phishing recovery</li>
-      </ul>
+    <div class="call-box">
+      <div class="phone">📞 <a href="tel:+1(866) 859-0631">1-(866) 859-0631</a></div>
+      <a class="cta" href="tel:+1(866) 859-0631">Call Now — Get Support</a>
     </div>
 
-    <div class="section">
-      <h2>💡 Why Call Us?</h2>
-      <ul>
-        <li>Live Crypto Experts – 24/7 Available</li>
-        <li>100% Secure & Private Help</li>
-        <li>No Wait Time – Instant Response</li>
-        <li>Trusted & Confidential Solutions</li>
-      </ul>
-    </div>
-
-    <div class="cta-box">
-      <h2>⚠️ Don’t Wait – Protect Your BTC Now!</h2>
-      <p class="subtitle">Speak to a certified technician before your funds are at risk.</p>
-      <div class="cta-number">📞 +1 866-240-0136</div>
-      <a href="tel:+18662400136" class="cta-button">Call Now</a>
+    <div class="features">
+      <div class="feature">
+        <div class="icon">🎟️</div>
+        <h3>Seat Access Issues</h3>
+        <p>Help with QR codes, mobile Seats not showing, or transfer problems.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">💳</div>
+        <h3>Payment & Billing</h3>
+        <p>Guidance for declined charges, duplicate billing, or refund requests.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">👤</div>
+        <h3>Account Help</h3>
+        <p>Password resets, login problems, and updating your information.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📅</div>
+        <h3>Seat Questions</h3>
+        <p>Updates on Seat status, delivery times, and entry requirements.</p>
+      </div>
     </div>
 
     <footer>
-      <p>© 2025 BTC Help Center. Not affiliated with any wallet provider. For support only.</p>
+      <p><strong>Disclaimer:</strong> This is an independent customer service page. We are not affiliated with, sponsored by, or endorsed by SeatGeek or any other Seat marketplace. For official support, please visit the provider’s own website or app.</p>
     </footer>
   </div>
 
+  <div class="sticky">
+    <span>Need urgent help? Call now:</span>
+    <a href="tel:+1(866) 859-0631">1-(866) 859-0631</a>
+  </div>
 </body>
 </html>
